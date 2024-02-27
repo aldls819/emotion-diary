@@ -32,7 +32,7 @@ const reducer = (state, action) => {
     default:
       return state;
   }
-  return state;
+  return newState;
 };
 
 export const DiaryStateContext = React.createContext();
@@ -83,7 +83,7 @@ function App() {
       type: "CREATE",
       data: {
         id: dataId.current,
-        data: new Date(date).getTime(),
+        date: new Date(date).getTime(),
         content,
         emotion,
       },
