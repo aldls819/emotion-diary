@@ -1,9 +1,11 @@
 import React from "react";
 
+import DiaryEditor from "../components/DiaryEditor";
+
 const New = () => {
   return (
     <div>
-      <h1>여기는 New</h1>
+      <DiaryEditor />
     </div>
   );
 };
